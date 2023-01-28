@@ -1,0 +1,143 @@
+ body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.first-container img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+
+.first-container img {
+  
+    width: 100vw;
+    height: 75%;
+}
+.main-menu {
+    list-style-type: none;
+    position: absolute;
+    top: 39px;
+    left: 40%;
+}
+.main-menu li {
+    float: left;
+    margin-left: 31px;
+    color: #ffff;
+    font-size: 18px;
+}
+.mobile-image img {
+    width: 20%;
+    position: absolute;
+    top: 20%;
+    right: 19%;
+    border-radius: 38px;
+}
+@media only screen and (max-width: 600px) {
+    .mobile-image img {
+      height: 17vh;
+      width: 20vw;
+      margin-top: -14vh;
+    }
+  }
+  
+.mobile-image img:hover{
+     transform: scale(1.1);
+ transition: 0.5s;
+}
+.content {
+    position: absolute;
+    top: 39%;
+    left: 3%;
+}
+
+.content h1 {
+    color: #ffff;
+    font-size: 44px;
+
+    margin-left: 0vw;
+}
+@media only screen and (max-width: 600px) {
+    .content h1 {
+      color: #ffff;
+      margin-top: -30vh;
+      font-size: 12px;
+      margin-left: 0vw;
+    }
+  }
+.content p {
+    color: #ffff;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+@media only screen and (max-width: 600px) {
+    .content p {
+      color: #ffff;
+      font-size: 12px;
+      margin-top: 1vh;
+    }
+  }
+
+.content a {
+    color: #fff;
+    background-color: #131c3e;
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 18px;
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+    .content a {
+      color: #ffff;
+      font-size: 7px;
+      padding: 5px;
+    }
+  }
+
+.content a:hover{
+    background-color: #ffffff00;
+}
+
+.first-container{
+ height: 150vh;
+ width: 100vw;   
+}
+@media only screen and (max-width: 600px) {
+  .first-container {
+    color: #ffff;
+    font-size: 7px;
+    height: 30vh;
+    width: 100vw; 
+    
+  }
+}
+
+
+.second-container{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 212vh;
+
+}
+@media only screen and (max-width: 600px) {
+.second-container {
+  color: #ffff;
+  font-size: 7px;
+  margin-top: -90vh;
+}
+}
+
+
+.third{
+  margin-top: -38vh;
+}
+@media only screen and (max-width: 600px) {
+  .third{
+    color: #ffff;
+    font-size: 7px;
+    margin-top: -8vh;
+  }
+  }
+  

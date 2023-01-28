@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route } from "react-router-dom";
+import Login from "./Forms/Login";
+import Navbar from "./Components/Navbar";
+import "./App.css";
+import Register from "./Forms/Register";
+
+import HomeFinal from "./Components/HomeFinal";
+import Items from "./Components/Items";
+import { AddProducts } from './Components/AddProducts'
+import AboutUs from "./Components/AboutUs";
+import ForgotPasword from "./Forms/Forgotpassword";
+import Cart from "./Components1/Cart";
+import Testimonal from "./Components/Testimonial";
+import { Addtestimonial } from "./Components/Addtestimonial";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+
+      <Route path="/" exact element={<Navbar />}/>
+      <Route path="/login" exact element={<Login />}/>
+      <Route path="/register" exact element={< Register />}/>
+      <Route path="/" exact element={< Items />}/>
+      <Route path='/product' exact element={< AddProducts/>}/>
+       <Route path='/About' exact element={< AboutUs/>}/>
+       <Route path="/forgotpassword" exact element={< ForgotPasword />}/>
+       <Route path="/cart1" exact element={< Cart />}/>
+       <Route path='/home' exact element={<HomeFinal/> }/>
+       <Route path='/test' exact element={<Testimonal/> }/>
+       <Route path='/atest' exact element={<Addtestimonial/> }/>
+    </Routes>
   );
 }
 
 export default App;
+

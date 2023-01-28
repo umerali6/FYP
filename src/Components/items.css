@@ -1,0 +1,31 @@
+.card-img, .card-img-top {
+    background-color: white;
+    border-radius: 100px;
+   
+}
+.card-body1 {
+    margin-top: 1vh;
+    --bs-card-bg: #ffffff;
+    color: black;
+  
+}
+
+.my-4 {
+    background-color: white;
+    margin-top: 1.5rem!important;
+    margin-bottom: 1.5rem!important;
+    border-radius: 10px 10px;
+}
+
+    @media only screen and (max-width: 600px) {
+        .card-img, .card-img-top{
+          color: #ffff;
+          font-size: 7px;
+          height: 10vh;
+          width: 18vw; 
+        
+     }
+      }
+
+      
+
